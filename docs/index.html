@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duan - Cardápio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a class="logo" href="index.html"><img src="../assets/logo-duan.png" alt="Duan"></a>
+    <div class="links" id="areaConta">
+      <a href="login.html">Entrar</a>
+      <a href="cadastro.html">Cadastrar</a>
+    </div>
+    <div class="links">
+      <a href="carrinho.html" class="btn-carrinho">
+        🛒 Carrinho
+        <span class="qtd" id="qtdCarrinho">0</span>
+      </a>
+      <button class="btn-tema" id="btnTema" aria-label="Alternar tema">
+        <span class="trilha"><span class="bolinha"></span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <img class="logo-grande" src="../assets/logo-duan.png" alt="Duan">
+    <p>Doce em cada mordida!</p>
+    <div class="pontinhos"><span></span><span></span><span></span></div>
+  </section>
+
+  <div class="busca-wrap">
+    <input type="text" id="campoBusca" placeholder="Buscar bala, pudim, tortinha...">
+  </div>
+
+  <div class="grid-produtos" id="gridProdutos"></div>
+
+  <section class="sobre">
+    <h2>De onde vem a Duan</h2>
+    <p>
+      Tudo começou testando receitas de doce com fruta de verdade, sem enrolação e sem
+      conservante que não presta. Hoje cada bala, pudim e tortinha sai da nossa cozinha
+      do mesmo jeito: fruta boa, açúcar na medida e muito carinho.
+    </p>
+    <div class="fatos-fita">
+      <div class="fato-pill">
+        <strong>Fruta de verdade</strong>
+        <span>Sem conservante, sem enrolação</span>
+      </div>
+      <div class="fato-pill">
+        <strong>Receita caseira</strong>
+        <span>Testada e aprovada em casa</span>
+      </div>
+      <div class="fato-pill">
+        <strong>Feito na hora</strong>
+        <span>Fresquinho pra sua mesa</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="info-funcionamento">
+    <span>Segunda a sábado, 9h às 18h</span>
+    <span>Retirada no local ou entrega</span>
+  </div>
+
+  <footer>
+    Duan - Doce de fruta - Projeto Integrador, Colégio Cotemig
+  </footer>
+
+  <script src="js/produtos.js"></script>
+  <script src="js/carrinho.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/tema.js"></script>
+</body>
+</html>
